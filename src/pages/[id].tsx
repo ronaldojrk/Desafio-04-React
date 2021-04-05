@@ -1,8 +1,7 @@
-import { Box, Flex, Grid, GridItem, HStack, Image, SimpleGrid, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Flex, Grid, HStack, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { Header } from "../components/Header";
 import { continents } from "../continent";
-import { CircleFlag } from "react-circle-flags";
 import { InfoOutlineIcon } from '@chakra-ui/icons'
 import { Card } from "../components/Card";
 

@@ -1,8 +1,6 @@
 import { Box, Flex, Grid, HStack, Image, Stack, Text, Link as ChakraLink, Heading, useBreakpointValue, GridItem } from "@chakra-ui/react";
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React from "react";
 import { Header } from "../components/Header";
-import { api } from "../services/api";
 import SwiperCore, { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
@@ -268,7 +266,8 @@ export default function Home({ continents }: HomeProps) {
                           justify="center"
                           align="center"
                         >
-                          <Heading fontSize="5xl" fontWeight="bold" color="gray.50">
+                          <Heading fontSize="5xl"
+                            align="center" fontWeight="bold" color="gray.50">
                             {continent.name}
                           </Heading>
                           <Text
@@ -276,6 +275,7 @@ export default function Home({ continents }: HomeProps) {
                             color="gray.100"
                             fontWeight="bold"
                             fontSize="2xl"
+                            align="center"
                           >
                             {continent.call}
                           </Text>
