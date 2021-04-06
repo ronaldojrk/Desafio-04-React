@@ -305,7 +305,9 @@ export default function Home({ continents }: HomeProps) {
                       justify="center"
                       align="center"
                       h="250px"
-                      objectFit="cover"
+                      bgPosition="center"
+                      bgRepeat="no-repeat"
+                      bgSize="cover"
                       color="gray.50"
                       flexDir="column"
                     >
@@ -315,7 +317,7 @@ export default function Home({ continents }: HomeProps) {
                           justify="center"
                           align="center"
                         >
-                          <Heading fontSize="2xl" fontWeight="bold" color="gray.50">
+                          <Heading fontSize="2xl" align="center" fontWeight="bold" color="gray.50">
                             {continent.name}
                           </Heading>
                           <Text
